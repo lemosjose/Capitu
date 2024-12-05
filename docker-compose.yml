@@ -1,0 +1,11 @@
+services:
+  bot:
+    container_name: capitu
+
+    build:
+      context: "."
+
+    env_file: 
+      - path: ./.env 
+        required: true 
+    restart: always
